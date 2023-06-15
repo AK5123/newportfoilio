@@ -1,0 +1,18 @@
+#standing-diver-palm {
+    transform-origin: left bottom;
+    animation: palmMove 1s infinite ease;
+    transform-box: fill-box;
+}
+
+@keyframes palmMove {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}

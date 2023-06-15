@@ -1,0 +1,89 @@
+.project-card-container {
+    background: rgba(217, 217, 217, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    width: 200px;
+    min-width: 200px;
+    padding: 15px 10px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: relative;
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 4px 27px rgba(255, 255, 255, 0.23);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card-container .title {
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.project-card-container .subtitle {
+    color: white;
+    opacity: 0.7;
+    font-size: 13px;
+    padding-top: 6px;
+    font-weight: 500;
+}
+
+.github-overlay {
+    position: absolute;
+    width: 120px;
+    right: -30px;
+    bottom: -30px;
+    opacity: 0.7;
+    transform: rotate(15deg);
+}
+
+.project-card-container .caption {
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+.github {
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.github:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.project-icon {
+    padding: 5px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.project-icon img {
+    height: 30px;
+    max-height: 30px;
+    max-width: 45px;
+    object-fit: contain;
+}
+
+.icon-text {
+    color: white;
+    font-size: 20px;
+}
+
+.icons-container {
+    display: flex;
+    gap: 15px;
+}

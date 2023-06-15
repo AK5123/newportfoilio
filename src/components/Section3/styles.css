@@ -1,0 +1,151 @@
+.three {
+    position: relative;
+    background: linear-gradient(180deg, #005e78 0%, #002d39 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 20px;
+    /* justify-content: center; */
+    min-height: 100vh;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#head {
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+.diver-lookdown {
+    width: 270px;
+}
+
+.three-comment {
+    transform: translateX(50%);
+}
+
+.projects-container {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 40px;
+
+    padding: 40px;
+    max-width: 1200px;
+    max-height: 600px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    justify-content: space-around;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* 40 40 gap 20 card 200 */
+.project-one {
+    align-self: flex-start;
+}
+
+.project-two {
+    align-self: center;
+}
+
+.project-three {
+    align-self: flex-end;
+}
+
+.project-four {
+    align-self: center;
+}
+
+.project-five {
+    align-self: flex-start;
+}
+
+@media (max-width: 1159px) {
+    .project-one {
+        align-self: start;
+    }
+
+    .project-two {
+        align-self: flex-end;
+    }
+
+    .project-three {
+        align-self: flex-end;
+    }
+
+    .project-four {
+        align-self: start;
+    }
+    .project-five {
+        align-self: center;
+    }
+}
+
+@media (max-width: 939px) {
+    .project-one {
+        align-self: start;
+    }
+
+    .project-two {
+        align-self: flex-end;
+    }
+
+    .project-three {
+        align-self: start;
+    }
+
+    .project-four {
+        align-self: start;
+    }
+    .project-five {
+        align-self: start;
+    }
+}
+
+@media (max-width: 719px) {
+    .project-two {
+        align-self: start;
+    }
+}
+
+@media (max-width: 499px) {
+    .projects-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        /* padding-top: 400px; */
+        justify-content: stretch;
+        gap: 40px;
+    }
+    .project-one {
+        align-self: start;
+    }
+
+    .project-two {
+        align-self: flex-end;
+    }
+
+    .project-three {
+        align-self: start;
+    }
+
+    .project-four {
+        align-self: flex-end;
+    }
+    .project-five {
+        align-self: start;
+    }
+}

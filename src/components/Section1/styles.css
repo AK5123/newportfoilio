@@ -1,0 +1,66 @@
+.sun {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: orange;
+    position: absolute;
+}
+
+.character {
+    position: absolute;
+    left: 50%;
+    bottom: 29%;
+    transform: translateX(-50%);
+}
+
+.stand {
+    position: absolute;
+    height: 30%;
+    width: 100px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orca {
+    position: absolute;
+    height: 35%;
+    left: 10%;
+    bottom: -5%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    height: 20px;
+    background-color: #966f33;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.stick {
+    width: 10px;
+    background-color: #966f33;
+    flex: 1;
+}
+
+.one {
+    position: relative;
+    background: linear-gradient(to top, #283e51, #0a2342);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.one-comment {
+    position: absolute;
+    right: 90%;
+    white-space: nowrap;
+    top: -10%;
+}

@@ -1,0 +1,25 @@
+.comment-container {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.topLeft {
+    border-top-left-radius: 0px;
+}
+
+.topRight {
+    border-top-right-radius: 0px;
+}
+
+.bottomLeft {
+    border-bottom-left-radius: 0px;
+}
+
+.bottomRight {
+    border-bottom-right-radius: 0px;
+}
+
+.comment-text {
+    font-size: 12px;
+}

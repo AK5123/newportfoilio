@@ -1,0 +1,219 @@
+.two {
+    position: relative;
+    background: linear-gradient(180deg, #0095be 0%, #005e78 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+.squid-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.squid-container:hover {
+    animation: none !important;
+}
+
+.head {
+    background: linear-gradient(356.08deg, #3b31ab 20.84%, #5fa2d8 124.7%);
+    border-top-left-radius: 999px;
+    border-top-right-radius: 999px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding: 40px 25px 20px 25px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0.18);
+    border-bottom: 0;
+    color: rgba(255, 255, 255, 0.58);
+    z-index: 11;
+    position: relative;
+    font-weight: 300;
+}
+
+.base {
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 10px;
+
+    background: #923ea4;
+    height: 45px;
+    margin-top: -10px;
+}
+
+.tentacles-container {
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.tentacle {
+    position: relative;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        #e298b1 0%,
+        rgba(226, 152, 177, 0) 100%
+    );
+    border-radius: 10px;
+    margin-top: -30px;
+    z-index: 1;
+    position: relative;
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.tentacle:hover {
+    cursor: pointer;
+    background-color: #e298b1;
+    transform: scaleX(1.2);
+    /* height: 100% !important; */
+}
+
+.tentacle-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tentacle-img {
+    width: 20px;
+    height: 20px;
+}
+
+.jelly-fish-1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(-20deg);
+}
+
+.jelly-fish-2 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    transform: rotate(20deg);
+}
+
+.jelly-fish-3 {
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    transform: rotate(-20deg);
+}
+
+.jelly-fish-4 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    transform: rotate(10deg);
+}
+
+.jelly-fish-5 {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    transform: rotate(20deg);
+}
+
+.jelly-fish-6 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: rotate(20deg);
+}
+
+.jelly-fish-7 {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    transform: rotate(-5deg);
+}
+
+.jelly-fish-8 {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    transform: rotate(20deg);
+}
+
+.jelly-fish-9 {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    transform: rotate(5deg);
+}
+
+.jelly-fish-10 {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    transform: rotate(-15deg);
+}
+
+.diver-on-squid-container {
+    position: relative;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.two-comment {
+    position: absolute;
+    white-space: nowrap;
+    top: 10%;
+    right: 80%;
+    z-index: 12;
+}
+
+.hindu-link {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .jelly-fish-3 {
+        display: none;
+    }
+}
+
+@keyframes tentacle-move {
+    0% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+}
