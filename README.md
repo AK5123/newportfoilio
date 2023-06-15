@@ -1,3 +1,4 @@
 # Portfolio of Kandavel A
 
-Hosted at https://kandavel.surge.sh/
+Hosted at https://kandavel.vercel.app/
+
